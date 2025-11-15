@@ -8,4 +8,6 @@ COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app/
 EXPOSE 8000
-CMD ["gunicorn", "mpress.wsgi:application", "--bind", "0.0.0.0:8000"]
+COPY start.sh /app/start.sh
+RUN chmod +x /app/start.sh
+CMD ["bash", "/app/start.sh"]
