@@ -60,7 +60,7 @@ MIDDLEWARE = [
 # ------------------------------------------------------------
 # URL & WSGI
 # ------------------------------------------------------------
-ROOT_URLCONF = 'mpress.urls'
+ROOT_URLCONF = 'MPress.urls'
 
 TEMPLATES = [
     {
@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'mpress.wsgi.application'
+WSGI_APPLICATION = 'MPress.wsgi.application'
 
 
 # ------------------------------------------------------------
