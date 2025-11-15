@@ -56,7 +56,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'MPress.urls'
+ROOT_URLCONF = 'mpress.urls'
 
 TEMPLATES = [
     {
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'MPress.wsgi.application'
+WSGI_APPLICATION = 'mpress.wsgi.application'
 
 
 # Database

@@ -6,9 +6,9 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    # Use the project's package path. On some deployments the top-level package
-    # is capitalized (`MPress`), ensure the settings module points correctly.
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'MPress.settings')
+    # Use the project's package path. Use the lowercase package name
+    # that matches the inner Django package (`mpress`) across deploys.
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mpress.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

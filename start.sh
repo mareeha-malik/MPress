@@ -10,7 +10,7 @@ PORT=${PORT:-8000}
 # python manage.py collectstatic --noinput
 
 echo "Starting Gunicorn on port ${PORT}"
-exec gunicorn MPress.wsgi:application \
+exec gunicorn mpress.wsgi:application \
   --bind 0.0.0.0:${PORT} \
   --workers 3 \
   --log-level info

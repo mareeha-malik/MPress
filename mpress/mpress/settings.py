@@ -60,7 +60,8 @@ MIDDLEWARE = [
 # ------------------------------------------------------------
 # URL & WSGI
 # ------------------------------------------------------------
-ROOT_URLCONF = 'MPress.urls'
+# Use the lowercase package name for imports in production/deploys.
+ROOT_URLCONF = 'mpress.urls'
 
 TEMPLATES = [
     {
@@ -78,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'MPress.wsgi.application'
+WSGI_APPLICATION = 'mpress.wsgi.application'
 
 
 # ------------------------------------------------------------
